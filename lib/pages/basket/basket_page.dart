@@ -17,7 +17,7 @@ class BasketPage extends StatelessWidget {
           ),
           TextButton(
               onPressed: (){
-                Get.toNamed('/page1', id: 1);
+                Get.toNamed('/page1', );
               },
               child: Text('Go to Page1')
           )

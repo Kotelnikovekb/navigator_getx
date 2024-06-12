@@ -10,7 +10,6 @@ class CartNavigator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Navigator(
-      key: Get.nestedKey(2),
       reportsRouteUpdateToEngine: true,
       initialRoute: '/basket',
       onGenerateRoute: (settings) {

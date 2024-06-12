@@ -8,8 +8,10 @@ class ShopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
     return Navigator(
-      key: Get.nestedKey(1),
+      key: Get.nestedKey('1')!.navigatorKey,
       initialRoute: '/page1',
       onGenerateRoute: (settings) {
         if (settings.name == '/page1') {

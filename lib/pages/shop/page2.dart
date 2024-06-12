@@ -13,13 +13,13 @@ class Page2 extends StatelessWidget {
           Text('Page2'),
           TextButton(
               onPressed: (){
-                Get.back(id: 1);
+                Get.back();
               },
               child: Text('back')
           ),
           TextButton(
               onPressed: (){
-                Get.toNamed('/outside');
+                Get.toNamed('/outside',id: '1');
               },
               child: Text('to outside page')
           )
